@@ -59,6 +59,6 @@ contract Decentragram {
     // update the image in the map
     images[id] = image;    
 
-    emit ImageTipped(id, image.hash, image.description, image.tipAmount, msg.sender);
+    emit ImageTipped(id, image.hash, image.description, image.tipAmount, authorAddress);
   }
 }
