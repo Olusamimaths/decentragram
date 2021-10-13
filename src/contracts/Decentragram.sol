@@ -40,7 +40,7 @@ contract Decentragram {
     imageCount++;
 
     uint tipAmount = 0;
-    images[imageCount] = Image(1, imgHash, description, tipAmount, msg.sender); // msg is a global variable
+    images[imageCount] = Image(imageCount, imgHash, description, tipAmount, msg.sender); // msg is a global variable
 
     emit ImageCreated(imageCount, imgHash, description, tipAmount, msg.sender);
   }
